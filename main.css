@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+}
+
+header {
+    padding-top: 60px;
+    padding-bottom: 140px;
+    background: linear-gradient(to bottom, #7db9e8 0%, #2e7be8 48%);
+}
+
+.container {
+    width: 90%; 
+    max-width: 1100px; 
+    margin: 0 auto;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.offer {
+    width: 100%; 
+    max-width: 450px; 
+    color: white;
+    margin-bottom: 20px; 
+}
+
+.offer__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+.title__span {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.offer__text {
+    font-size: 14px;
+    text-align: justify;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.offer__button {
+    width: 100%; 
+    max-width: 230px; 
+    height: 50px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffd429;
+    transition: all 0.5s;
+}
+
+.offer__button:hover {
+    background-color: yellow;
+}
+
+.header__image {
+    width: 100%; 
+    max-width: 456px; 
+    height: auto;
+}
+
+main {
+    padding-top: 60px;
+    padding-bottom: 90px;
+}
+
+.main__title {
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.blocks {
+    text-align: center;
+    width: 100%; 
+}
+
+.blocks__images {
+    margin-bottom: 15px;
+}
+
+.images__text {
+    font-weight: 100;
+    font-size: 14px;
+    color: gray;
+}
+
+section {
+    background-color: #ecf3f8;
+    padding-top: 60px;
+    padding-bottom: 90px;
+}
+
+.section__title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 90%; 
+    max-width: 300px; 
+    height: 30px;
+    margin-bottom: 15px;
+    text-indent: 20px;
+}
+
+button {
+    width: 90%; 
+    max-width: 308px;
+    height: 44px;
+    background-color: #ffd429;
+    border-width: 1px;
+    border-color: gray;
+}
+
+button:hover {
+    background-color: yellow;
+}
+
+footer {
+    background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 50%,rgba(125,185,232,1) 100%);
+}
+
+.copyright {
+    margin: 0;
+    padding: 50px;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%; 
+    }
+
+    .offer {
+        width: 100%; 
+        max-width: none; 
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .offer__text {
+        width: 100%;
+    }
+
+    .header__image {
+        max-width: 100%; 
+        height: auto;
+    }
+
+    input,
+    button {
+        width: 90%; 
+        max-width: 300px; 
+    }
+}

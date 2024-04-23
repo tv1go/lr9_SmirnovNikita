@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Company</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="pictures/logo.png" alt="Логотип" class="logo">
+            <div class="wrapper">
+                <div class="offer">
+                    <h2 class="offer__title">С помощью нас<br> вы сможете создать то, о чем</h2>
+                    <span class="title__span">желаете!</span>
+                    <p class="offer__text">Наши возможности + опыт позволят Вам достичь огромного успеха.
+                        Мы верим в вас! И знаем это на все 100%. Вас не остановить!</p>
+                    <a href="#" class="offer__button">Узнать больше...</a>
+                </div>
+                <img src="pictures/header-img.png" alt="Телефон" class="header__image">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2 class="main__title">Что Вам необходимо?</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="blocks">
+                        <img src="pictures/f3.png" alt="Картинка" class="blocks__images">
+                        <h3>Первый блок</h3>
+                        <p class="images__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blocks">
+                        <img src="pictures/f4.png" alt="Картинка" class="blocks__images">
+                        <h3>Второй блок</h3>
+                        <p class="images__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit?</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blocks">
+                        <img src="pictures/f5.png" alt="Картинка" class="blocks__images">
+                        <h3>Третий блок</h3>
+                        <p class="images__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section>
+        <div class="container">
+            <h2 class="section__title">Форма заказа продукта или услуги</h2>
+            <form id="product-form" action="#" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Название продукта или услуги" required>
+                    <span class="form-hint">Введите название продукта или услуги</span>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Ваш E-mail" required>
+                    <span class="form-hint">Введите ваш email (example@example.com)</span>
+                </div>
+                <div class="form-group">
+                    <input type="tel" class="form-control" placeholder="Ваш телефон" required>
+                    <span class="form-hint">Введите ваш телефон (+79001112233)</span>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" placeholder="Дополнительная информация" required></textarea>
+                    <span class="form-hint">Введите дополнительную информацию</span>
+                </div>
+                <div class="form-group">
+                    <select class="form-control" name="payment-method" id="payment-method" required>
+                        <option value="">Выберите способ оплаты</option>
+                        <option value="card">Кредитная карта</option>
+                        <option value="bank-transfer">Банковский перевод</option>
+                        <option value="cash">Наличные</option>
+                    </select>
+                    <span class="form-hint">Выберите способ оплаты</span>
+                </div>
+                <button type="submit" class="btn btn-primary">Отправить запрос</button>
+            </form>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 class="section__title">Форма заказа обратного звонка</h2>
+            <form id="callback-form" action="#" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Имя" required>
+                    <span class="form-hint">Введите ваше имя</span>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="E-mail" required>
+                    <span class="form-hint">Введите ваш email (12345@gmail.com)</span>
+                </div>
+                <div class="form-group">
+                    <input type="tel" class="form-control" placeholder="Телефон" required>
+                    <span class="form-hint">Введите ваш телефон (+79001112233)</span>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Тема" required>
+                    <span class="form-hint">Введите тему</span>
+                </div>
+                <button type="submit" class="btn btn-primary">Отправить запрос</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p class="copyright">© Все на этом сайте защищено</p>
+    </footer>
+    <script src="validation.js"></script>
+</body>
+</html>
